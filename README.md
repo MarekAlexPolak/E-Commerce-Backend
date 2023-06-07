@@ -40,12 +40,28 @@ Next seed the database by running the index.js file inside the seeds folder.
 
 Finally run the server from the server.js file.
 
-![Picture of Step 2](/images/Step2.PNG)
+![Picture of Step 3](/images/Step3.PNG)
 
 Once running the application can do a number of applications such as view different criteria within the database. 
 
+![API Call for get all](/images/getallapicall.PNG)
+
 It can also delete and update data from the database.
+
+![API Call for tagname](/images/changetagname.PNG)
 
 Refer to the instructional video for a more indepth walkthrough of the application.
 
-![Picture of Step 3](/images/Step3.PNG)
+
+[Video Demo](https://www.youtube.com/watch?v=4zelib1L14c)
+
+## License
+    
+N/A
+
+## Contact Information
+  
+[My Github](https://github.com/MarekAlexPolak)
+  
+Email: markalexpolak@gmail.com
+  

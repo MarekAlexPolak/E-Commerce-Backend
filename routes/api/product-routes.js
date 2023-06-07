@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
-    .then(dbProductData => res.json(dbProductData))
+    .then(data => res.json(data))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -47,12 +47,12 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-    .then(dbProductData => {
-      if (!dbProductData) {
+    .then(data => {
+      if (!data) {
         res.status(404).json({message: 'No Result'});
         return;
       }
-      res.json(dbProductData);
+      res.json(data);
     })
     .catch(err => {
       console.log(err);
@@ -141,12 +141,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbProductData => {
-    if (!dbProductData) {
+  .then(data => {
+    if (!data) {
       rs.status(404).json({message: 'No Result'});
       return;
     }
-    res.json(dbProductData);
+    res.json({message: "deleted"});
   })
   .catch(err => {
     console.log(err);
